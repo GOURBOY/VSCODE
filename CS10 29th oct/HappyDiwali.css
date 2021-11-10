@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(249, 252, 61);
+    
+    }
+    h1{
+       text-align: center;
+    }
+    img{
+       
+        margin-left: 35%;
+        border: 30px solid red;
+    }
+    ol,ul{
+      margin-left: 20%; 
+      font: 20px bold;
+      display:inline-block;
+      border: 5px solid;
+      border-style: double;
+      border-inline-width: 20px;
+
+      
+  
+    }
+    hr{
+        height: 10px;
+        background-color: rgb(255, 0, 0);
+    }   
+    .bor{
+        border: 5px solid coral;
+      border-style: double;
+      border-inline-width: 20px;
+    }
+    .ol{
+      
+    }
+    iframe{
+        margin-left: 350px;
+    }
+
+
