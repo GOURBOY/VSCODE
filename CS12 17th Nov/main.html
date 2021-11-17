@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Trees</h1>
+    <p id="tre">Beautiful trees</p>
+    <p class="tr">Good apples</p>
+    <p class="tr">Good stem</p>
+    <p class="tr">Good root</p>
+    <p class="ter">Good rooties</p>
+
+    <script>
+        var student={
+            fname:"Abhay",
+            lname:"Gour",
+            rollNo:"128"
+ }
+       document.getElementById("tre").innerHTML=student.fname; 
+       var clas=document.getElementsByClassName("tr");
+       for(var k=0;k<3;k++){
+           clas[k].innerHTML="student[l2]"
+       }
+    //    student.hello=function(){
+    //        console.log("HY");
+    //    }
+        // for(k in student){
+        // console.log(student[k]);
+        // }
+
+    </script>
+</body>
+</html>
