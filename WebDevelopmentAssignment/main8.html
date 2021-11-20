@@ -22,15 +22,21 @@
 
 </style>
 <body>
-  <h1>Area of triangle is : 👇👇</h1>
+  <h1 id="h1">Area of triangle is : 👇👇</h1>
  <marquee id="mark"></marquee> 
  
  <script>
   
-   const base=prompt("Enter the base of triangle in (cm)");
-   const height=prompt("Enter the height of triangle in (cm)");
-   const area=base*height/2;
-   document.getElementById('mark').innerHTML="Area = "+area+" cm.square "
+  
+   const num=prompt("Enter the Number:");
+   if(num%2==0){
+    document.getElementById('mark').innerHTML="EVEN";
+   }
+   else{
+    document.getElementById('mark').innerHTML="ODD";
+   }
+   document.getElementById('h1').innerHTML="Number "+num+" is :👇👇"
+  
  </script>   
 </body>
 </html>
