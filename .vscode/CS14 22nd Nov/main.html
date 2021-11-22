@@ -6,10 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+
+div{
+
+    border: 2px solid ;
+    border-collapse: collapse;
+    margin: auto;
+    border-width: 5px;
+    width: 500px;
+    height: 500px;
+    font-size: larger;
+  
+    
+}
+</style>
 <body>
     
-<script>
+<center><h1>Login Page</h1></center>
+<hr>
+<center>
+<div>
+ <p>
+UserName:
+<input type="text"><br><br></p>
+</p>Email:
+<input type="email" id="em"></p> 
+<p>
+<input type="submit" id="sub" onclick="fun()"></p>
+</div>
+</center>
 
+<script>
+function fun(){
+     var em=document.getElementById("em").value.indexOf("@");
+     if(em==-1){
+         alert("fail");
+     }
+     else{
+         alert("pass");
+     }
+
+}
 
 
 </script>
