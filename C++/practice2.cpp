@@ -1,30 +1,29 @@
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 void swap(int *a,int *b){
-    int t=*a;
-    *a=*b;
-    *b=t;
+   int t=*a;
+   *a=*b;
+   *b=t;
 }
-int partition(int arr[],int low,int high){
-    int pivot=arr[high];
-    int i=low-1;
-    for(int j=low;j<=high-1;j++){
-        if(arr[j]<=pivot){
-            i++;
-            swap(&arr[i],&arr[j]);
+void BubbleSort(int arr[],int size){
+
+    int i,j;
+    bool swapped;
+    for(int i=0;i<size-1;i++){
+        swapped = false;
+        for(int j=0;j<size-i-1;j++){
+            if(arr[j]>arr[j+1]){
+                swap(&arr[j],&arr[j+1]);
+                swapped =true;
+            }
         }
+    if(swapped==false){
+        break;
     }
-    swap(&arr[i+1],&arr[high]);
-    return i+1;
-}
-void quicksort(int arr[],int p,int r){
-    if(p<r){
-    int q=partition(arr,p,r);
-    quicksort(arr,p,q-1);
-    quicksort(arr,q+1,r);
     }
+
 }
-void printSArray(int arr[],int size){
+void printarray(int arr[],int size){
     for(int i=0;i<size;i++){
         cout<<arr[i]<<"\t";
     }
@@ -36,7 +35,6 @@ int main(){
     for(int i=0;i<num;i++){
         cin>>arr[i];
     }
-    quicksort(arr,0,num-1);
-    printSArray(arr,num);
-    cout<<endl<<"*******************Thanku For using ABHAY's SORTING ALGORITHM***********************";
+    BubbleSort(arr,num);
+    printarray(arr,num);
 }

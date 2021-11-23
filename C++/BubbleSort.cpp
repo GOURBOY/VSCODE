@@ -1,3 +1,4 @@
+//Bubble Sort 
 #include<iostream>
 using namespace std;
 void swap(int *a, int *b)
@@ -25,7 +26,7 @@ void bubbleSort(int arr[], int n)
      }
  
      if (swapped == false)
-        break;
+             break;
    }
 }
  
