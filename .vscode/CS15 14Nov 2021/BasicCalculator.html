@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+//          Sir For Special Effects I have Used Keyframes 
+<style>
+    ::placeholder{
+        font-size: 15px;
+        color: black;
+        
+    }
+    body{
+        background-color: black;
+    }
+    #div1{
+        border: 2px solid lime;
+        width: 170px;
+        height: 300px;
+        margin-left:350px ;
+        margin-top: 20px;
+    }
+    #div1,body,marquee,input,button{
+        
+	background: linear-gradient(-45deg, orange, rgb(234, 255, 41), rgb(255, 0, 43),rgb(132, 251, 255) );
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+   #div2{
+        border: solid 2px black;
+        height: 30px;
+       
+        
+    }
+    marquee{
+    
+        font-size: x-large;
+    }
+    button{
+        
+        margin-top: 10px;
+    }
+</style>
+<body>
+    <div id="div2">
+        <marquee >Basic Calculator</marquee>
+     </div>
+
+    <div id="div1">
+    <input type="text" id="t1" placeholder="Enter 1st Number">
+    <input type="text" id="t2" placeholder="Enter 2nd Number">
+    <input type="text" id="t3" placeholder="Your Output will be Here">
+    <center><button onclick="p();">+</button></center><br>
+    <center><button onclick="m();">-</button></center><br>
+    <center><button onclick="d();">/</button></center><br>
+    <center><button onclick="mu();">*</button></center><br>
+    <center><button onclick="mo();">%</button></center><br>
+    </div>
+    <script>
+       
+    function p(){
+        var t1=document.getElementById("t1").value;
+        var t2=document.getElementById("t2").value;
+        var t3=document.getElementById("t3");
+        var t4=parseFloat(t1)+parseFloat(t2);
+       t3.value=t4;
+        
+    }
+    function m(){
+        var t1=document.getElementById("t1").value;
+        var t2=document.getElementById("t2").value;
+        var t3=document.getElementById("t3");
+        var t4=parseFloat(t1)-parseFloat(t2);
+       t3.value=t4;
+    }
+    function d(){
+        var t1=document.getElementById("t1").value;
+        var t2=document.getElementById("t2").value;
+        var t3=document.getElementById("t3");
+        var t4=parseFloat(t1)/parseFloat(t2);
+       t3.value=t4;
+    }
+    function mu(){
+        var t1=document.getElementById("t1").value;
+        var t2=document.getElementById("t2").value;
+        var t3=document.getElementById("t3");
+        var t4=parseFloat(t1)*parseFloat(t2);
+       t3.value=t4;
+    }
+    function mo(){
+        var t1=document.getElementById("t1").value;
+        var t2=document.getElementById("t2").value;
+        var t3=document.getElementById("t3");
+        var t4=parseFloat(t1)%parseFloat(t2);
+       t3.value=t4;
+    }
+    </script>
+    
+    
+</body>
+</html>
