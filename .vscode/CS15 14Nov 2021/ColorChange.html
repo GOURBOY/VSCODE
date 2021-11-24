@@ -1,19 +1,18 @@
 <html>
 <head>
-
+    <style>
+     button{
+         margin-top: 50px;
+     }
+    </style>
     <body id='body'>
-    <button onclick="changeColor();">Change color</button>
+    <center><button onclick="changeColor();">Change color</button></center>
     <script>
         var colors = ["red", "blue", "green","yellow","lime","black"];
-        var colorIndex = 0;
-        function changeColor() {
+            function changeColor() {
             var col = document.getElementById("body");
-            if( colorIndex >= colors.length ) {
-                colorIndex = 0;
+            col.style.backgroundColor = colors[Math.floor(Math.random() * 6 )];
             }
-            col.style.backgroundColor = colors[colorIndex];
-            colorIndex++;
-        }
     </script>
     </body>
 </html

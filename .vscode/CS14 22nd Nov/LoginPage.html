@@ -7,6 +7,37 @@
     <title>Document</title>
 </head>
 <style>
+body,h1{
+        
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #fcf80f, #23d5ab);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
 div{
 
@@ -15,9 +46,24 @@ div{
     margin: auto;
     border-width: 5px;
     width: 500px;
-    height: 500px;
+    height: 300px;
     font-size: larger;
   
+    
+}
+p{
+    font-size: x-large;
+}
+#e{
+    margin-left: 50px;
+}
+#pas{
+    margin-left: 10px;
+}
+#sub{
+    margin-top:-10px ;
+    width: 100px;
+    height: 30px;
     
 }
 </style>
@@ -29,23 +75,37 @@ div{
 <div>
  <p>
 UserName:
-<input type="text"><br><br></p>
-</p>Email:
-<input type="email" id="em"></p> 
-<p>
-<input type="submit" id="sub" onclick="fun()"></p>
+<input type="text" id="uid"><hr></p>
+<p id="e">Email:
+<input type="email" id="em"><hr></p> 
+<p id="pas">Password:&nbsp;<input type="password" id="pass"><hr></p>
+<p><center><input type="submit" id="sub" onclick="fun()"></center></p>
 </div>
 </center>
 
 <script>
 function fun(){
-     var em=document.getElementById("em").value.indexOf("@");
-     if(em==-1){
-         alert("fail");
+    var uid=document.getElementById("uid").value; 
+    var ei=document.getElementById("em").value;
+    var pwd=document.getElementById("pass").value;
+    var ema=document.getElementById("em").value.indexOf("@");
+    if(uid.length>0&&ei.length>0&&pwd.length>0){
+        if(ema==-1){
+         alert("Please enter proper Email");
      }
      else{
-         alert("pass");
+        window.location.href = "LoginPage2.html";
      }
+    }
+    else{
+        alert("Please enter all details");
+    }
+
+
+
+
+     
+     
 
 }
 

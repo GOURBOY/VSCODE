@@ -6,19 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
-<style>
-  #di{
-    display: inline;  
-
-   }
-</style>
 <body>
-  
-<div id="di">These is div tag</div>
-<input type="text" id="tex" placeholder="enter name">
-<script>
-  console.log(prompt());
-</script>
+<button onclick="fun()">Click me</button>
+  <script>
+         
+        function fun(){
+             
+          document.write( Math.floor(Math.random() * 6 ));
+         
 
+
+         } 
+
+  </script>
 </body>
 </html>
