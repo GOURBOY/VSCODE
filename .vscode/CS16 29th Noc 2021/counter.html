@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* **************SIR HERE I HAVE USED KEYFRAME***************** */
+
+   body,#but1,#but2{
+        
+        background: linear-gradient(-45deg, #acff13, #18fac9, #fffb07, #ff71ac);
+        background-size: 400% 400%;
+        -webkit-animation: gradient 15s ease infinite;
+                animation: gradient 15s ease infinite;
+    }
+    
+    @-webkit-keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+   .container{
+        
+	background: linear-gradient(-45deg, #ff744a, #c1ff2f, #fcf80f, #23d5ab);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/* ***************SIR HERE I HAVE USED KEYFRAME**************** */
+    .container{
+        margin-top: 80px;
+        margin-left: 390px;
+        height: 300px;
+        width: 500px;
+        border: solid black 5px;
+        border-radius: 30px;
+        border-style: dotted;
+    }
+    h1{
+        background-image: linear-gradient(90deg,red,blue);
+        background-clip: text;
+        color: #fcf80f;
+
+    }
+    .counter{
+        position: absolute;
+        margin-left: 220px;
+        margin-top: 30px;
+        font-size: xx-large ;
+        font-weight: bolder;
+    }
+    .buttons{
+        display: block;
+        margin-top: -80px;
+     
+     
+    }
+  #but1{
+     height: 300px;
+     border-radius: 30px;
+  }
+  #but2{
+    height: 300px;
+    border-radius: 30px;
+    margin-left: 358px;
+    width: 70px;
+  }
+</style>
+<body>
+    <div class="container">
+        <center><h1>JavaScript Programme</h1></center>
+        <span class="counter" id="count">0</span>
+        <span class="buttons">
+            <input type="button" value="Previous" id="but1" onclick="prev()">
+            <input type="button" value="Next" id="but2" onclick="next()">
+        </span>
+    
+    </div>
+    <script>
+        var counter=0;
+        var count=document.getElementById("count");
+        function next(){
+            counter++;
+            count.innerHTML=counter;
+            if(counter>0){
+                count.style.color="green";
+            }
+            else if(counter<0){
+                count.style.color="red";
+            }
+            else if(counter==0)
+            count.style.color="black";
+        }
+        function prev(){
+           counter--;
+           count.innerHTML=counter;
+           if(counter>0){
+                count.style.color="green";
+            }
+            else if(counter<0){
+                count.style.color="red";
+            }
+            else if(counter==0)
+            count.style.color="black";
+        }
+    </script>
+</body>
+</html>
