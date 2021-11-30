@@ -1,0 +1,343 @@
+/* *********************Sir Here I have Used KeyFrames For Dynamic Look************************* */
+body{
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #fcf80f, #23d5ab);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/* *********************Sir Here I have Used KeyFrames For Dynamic Look************************* */
+.container{
+  width: 1300px;
+  height: 973px;
+  margin-left: 15px;
+  background-color: #fbfbfb;
+  border: 2px solid #000000d3;
+}
+.topBar{
+    
+    width: 1300px;
+   height: 50px;
+   
+  background-color: #ce0505;
+}
+.topEllipse{
+    position: absolute;
+    margin-top: 5px;
+    width: 35px;
+    height: 35px;      
+    margin-left: 90px;
+    border: #fff solid ;
+    border-radius: 100px;
+    background-color: #fff;
+   
+}
+.e{
+  display: block;
+  margin-top: -5px;
+  width: 32px;
+  height: 47px;
+  font-family: Poppins;
+  font-size: 33px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  color: #eb2929;
+ 
+}
+.Login{
+    position: absolute;
+    width: 43px;
+    height: 23px;
+  margin-left: 1030px;
+  margin-top: 15px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+ 
+  color: #fff;
+ 
+}
+.createAcc{
+    position: absolute;
+    margin-left: 1080px;
+    margin-top: 10px;
+    width: 180px;
+    height: 30px;
+    
+  border-radius: 3px;
+  border: solid 1px #fff;
+}
+.creAcc{
+    display: block;
+    color: white;
+    margin-top:5px;
+    
+}
+.lowerContainer{
+  
+}
+.title{ 
+  position: absolute;
+  width: 512px;
+  height: 51px;
+  margin-left: 90px;
+  margin-top: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  
+  color: #192f60;
+}
+.filter-box{
+  position: absolute;
+  width: 260px;
+  height: 650px;
+  margin-left: 90px;
+  margin-top: 110px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+
+}
+.box-1{
+    position: absolute;
+  width: 794px;
+  height: 270px;
+  margin-left: 400px;
+  margin-top: 110px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+}
+.box-2{
+    position: absolute;
+  width: 794px;
+  height: 270px;
+  margin-left: 400px;
+  margin-top: 430px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+}
+.Filters{
+   display: block;
+  width: 55px;
+  height: 25px;
+  margin-left: 26px;
+  margin-top: 17px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  color: #192f60;
+}
+.Select-Location {
+    display: block;
+    margin-left: 26px;
+    margin-top: 10px;
+  width: 106px;
+  height: 20px;
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #192f60;
+}
+.select-loc1{
+    position: absolute;
+  margin-top: 11px;
+  margin-left: 27px; 
+  width: 200px;
+  height: 30px;
+  border-radius: 3px;
+  border: solid 1px #8c96ab;
+
+
+}
+.select-loc2{
+    
+ display: block;
+  margin-top: 5px;
+   font-family: Poppins;
+  font-size: 14px;
+  color: #8c96ab;
+
+}
+.Cuisine{
+
+    display: block;
+    margin-left: 26px;
+    margin-top: 70px;
+  width: 106px;
+  height: 20px;
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #192f60;
+}
+.cuis{
+    display: block;
+  margin-top: 8px;
+  margin-left: 57px;
+   font-family: Poppins;
+  font-size: 14px;
+  color: #8c96ab;
+}
+.cuis1{
+    margin-top: 10px;
+}
+.price{
+    display: block;
+    margin-left: 26px;
+    margin-top: 20px;
+  width: 106px;
+  height: 20px;
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #192f60;
+}
+.img{
+ 
+  margin: 25px 0 0 25px;
+  width: 90px;
+  height: 90px;
+  border-radius: 20px;
+  object-fit: cover;
+  
+}
+.The-Big-Chill-Cakery {
+ position: absolute;
+  width: 400px;
+  height: 43px;
+ margin-left: 30px;
+ margin-top: 30px;
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 600;
+ 
+  color: #192f60;
+}
+.FORT {
+position: absolute;
+ margin-left: 33px;
+margin-top: 70px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+ 
+  color: #192f60;
+}
+.address{
+  position: absolute;
+  margin-top: 95px;
+  margin-left: 33px;
+   font-family: Poppins;
+  font-size: 14px;
+  color: #8c96ab;
+}
+.horizontal_rule{
+
+  width: 726.4px;
+  height: 0;
+  margin: 31px 0 0;
+  border: solid 1px #dedfe5;
+}
+.CUISINES-COST-FOR-TWO {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 33px;
+   font-family: Poppins;
+  font-size: 14px;
+  color: #8c96ab;
+}
+.cost_for{
+  position: absolute;
+  width: max-content;
+  margin-top: 10px;
+}
+.Bakery-700{
+  position: absolute;
+ margin-left: 110px;
+margin-top:-1px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+ 
+  color: #192f60;
+}
+.b700{
+  position: absolute;
+  width: max-content;
+  margin-top: 10px;
+}
+.butto{
+  position: absolute;
+  margin-top: 730px;
+  margin-left: 610px
+}
+#but2,#but3,#but4,#but5,#but6{
+  
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: solid 1px #8c96ab;
+  background-color: #fff;
+  margin-left: 5px;
+  color: #8c96ab;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: bold;
+
+}
+#but1{
+  position: absolute;
+  display: block;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: solid 1px #8c96ab;
+  background-color: #fff;
+  margin-left: 5px;
+  color: #8b92a3;
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 730px 0 0 560px;
+ 
+}
+#but7{
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: solid 1px #8c96ab;
+  background-color: #fff;
+  margin-left: 5px;
+  color: #8c96ab;
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 730px 0 0 850px;
+}
