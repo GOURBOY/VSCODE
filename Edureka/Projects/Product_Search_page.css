@@ -341,6 +341,10 @@ margin-top:-1px;
   font-weight: bold;
   margin: 730px 0 0 850px;
 }
+.boxshadow{
+
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.16);
+}
 
 /*******Sir I have not added Responsiveness bcz i have not attended last class , soon i will add***************** */
  @media only screen and (min-width:480px){
