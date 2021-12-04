@@ -5,6 +5,17 @@ var but1=document.getElementById('but1');
 var but1=document.getElementById('but1');
 var but1=document.getElementById('but1');
 var but7=document.getElementById('but7');
+var filt=document.getElementById('filt');
+var filterb=document.getElementById('filter-box');
+function tvert(){
+  if(filt.style.display=="none")
+   { filt.style.display="block";
+    filterb.style.height="650px";
+  }
+   else 
+   {filt.style.display="none";   
+   filterb.style.height="39px";}
+}
 function fun1(){
   but1.style.backgroundColor="#8c96ab"; 
   but1.style.color="white";
