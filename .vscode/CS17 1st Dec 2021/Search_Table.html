@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    input{
+        width: 100%;
+    }
+    body{
+       
+        
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #fcf80f, #23d5ab);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+
+
+    }
+</style>
+<body>
+  <h1>Search Here....</h1>
+    <input type="search" id="search" onkeyup="fun()">
+    <table id="tbl">
+        <tr id="tr">
+          <th>Company</th>
+          <th>Contact</th>
+          <th>Country</th>
+        </tr>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td>
+        </tr>
+        <tr>
+          <td>Ernst Handel</td>
+          <td>Roland Mendel</td>
+          <td>Austria</td>
+        </tr>
+        <tr>
+          <td>Island Trading</td>
+          <td>Helen Bennett</td>
+          <td>UK</td>
+        </tr>
+        <tr>
+          <td>Laughing Bacchus Winecellars</td>
+          <td>Yoshi Tannamuri</td>
+          <td>Canada</td>
+        </tr>
+        <tr>
+          <td>Magazzini Alimentari Riuniti</td>
+          <td>Giovanni Rovelli</td>
+          <td>Italy</td>
+        </tr>
+      </table>
+
+    <script>
+     {
+         function fun(){
+             
+              let search=document.getElementById("search").value.toUpperCase();
+              let table= document.getElementById("tbl");
+              let tr=table.getElementsByTagName("tr");
+              for(var i=0;i<tr.length;i++)
+              {
+                  let td=tr[i].getElementsByTagName("td")[1];
+                 if(td)
+                 {
+                     let tv=td.textContent;
+                     if(tv.toUpperCase().indexOf(search)>-1)
+                     {
+                         tr[i].style.display="";
+                        
+                     }else{
+                         tr[i].style.display="none";
+                     }
+                 }
+              }
+          }
+    
+        }
+         
+
+    </script>
+</body>
+</html>

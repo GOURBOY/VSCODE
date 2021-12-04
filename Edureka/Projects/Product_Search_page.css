@@ -1,4 +1,5 @@
 /* *********************Sir Here I have Used KeyFrames For Dynamic Look************************* */
+
 body{
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #fcf80f, #23d5ab);
 	background-size: 400% 400%;
@@ -99,9 +100,7 @@ body{
     margin-top:5px;
     
 }
-.lowerContainer{
-  
-}
+
 .title{ 
   position: absolute;
   width: 512px;
@@ -114,6 +113,7 @@ body{
   
   color: #192f60;
 }
+
 .filter-box{
   position: absolute;
   width: 260px;
@@ -341,3 +341,20 @@ margin-top:-1px;
   font-weight: bold;
   margin: 730px 0 0 850px;
 }
+
+/*******Sir I have not added Responsiveness bcz i have not attended last class , soon i will add***************** */
+ @media only screen and (min-width:480px){
+
+  }
+  @media only screen and (min-width:768px){
+
+  }
+  @media only screen and (min-width:1024px){
+
+  }
+  @media only screen and (min-width:1200px){
+
+  }
+  @media only screen and (min-width:1201px){
+
+  }
