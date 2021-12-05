@@ -140,3 +140,5 @@ function fun7(){
   but6.style.color="#8b92a3";
  
 }
+
+    
