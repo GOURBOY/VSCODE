@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body,h1,button{
+       
+	background: linear-gradient(-45deg, #88fa53, #0cf7ffbb, #fcf80f, #23d5ab);
+	background-size: 900% 900%;
+	-webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+button{
+    font-size: xx-large;
+  
+}
+h1{ display: inline;
+    margin-left: 400px;
+    margin-top: 20px;
+    font-size: 50px;
+   
+    font-size: 72px;
+  background: -webkit-linear-gradient(rgb(250, 6, 6), rgb(132, 27, 231));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+input{
+    width: 1300px;
+    height: 100px;
+}
+#f1,#f2{
+    display: inline;
+    margin-left: 10px;
+    height: 300px;
+   
+}
+#tf1,#tf2{
+    font-size: xx-large;
+}
+
+#but1{
+       margin-left: 550px;
+       width: 100px;
+       height: 200px;
+       
+}
+#but2{
+    width: 100px;
+    height: 200px;
+    margin-left: -5px;
+       
+}
+#al{
+    margin-top: 50px;
+    border: 10px solid black;
+    border-radius: 50px;
+    height: 550px;
+    width: 1300px;
+    
+}
+</style>
+<body>
+    
+    <div id="al"> 
+    <h1>JUMP THE TEXT</h1>
+    <div id="f1"><input type="text" id="tf1" placeholder=" Enter your text "></div>
+    <button id="but1" onclick="fun()" >↓</button>
+    <button id="but2" onclick="fun2()">↑</button>
+    <div id="f2"><input type="text" id="tf2" placeholder=" Enter your text "></div>
+     </div>
+    
+    <script>
+    function fun(){
+        
+        var tf1=document.getElementById('tf1');
+        var tf2=document.getElementById('tf2');
+        if(tf1.value.length>0){
+        tf2.value=tf1.value;
+        tf1.value="";
+        }
+    }
+    function fun2(){
+        var tf1=document.getElementById('tf1');
+        var tf2=document.getElementById('tf2');
+        if(tf2.value.length>0){
+        tf1.value=tf2.value;
+        tf2.value="";
+    }
+}
+    </script>
+</body>
+</html>
