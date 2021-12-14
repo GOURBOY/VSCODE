@@ -298,6 +298,7 @@ margin-top:-1px;
 }
 .butto{
   position: absolute;
+  display: flex;
   margin-top: 730px;
   margin-left: 610px
 }
@@ -352,149 +353,111 @@ margin-top:-1px;
 .tvert{
   position: absolute;
   margin-top: -25px;
-  margin-left: 200px;
+  margin-left: 230px;
   color: #192f60;
   font-size: x-large;
   font-weight: bolder;
-  visibility: hidden;
-}
-/*******Sir I have not added Responsiveness bcz i have not attended last class , soon i will add***************** */
- 
 
-/* @media only screen and (min-width:0px) and (max-width:480px){
-  .tvert{
-    visibility: visible;
-  }      
-  .container {
-    width: 410px;
-    height: 973px;
-    background-color: #fbfbfb;
-    border: 2px solid #000000d3;
-    margin-left: -8px;
-    margin-top: -7px;
+}
+@media only screen and (min-width:0px) and (max-width:480px){
+ .topBar{
+       background-color: #ce0505;
+       width: 480px;
+ }
+ .container{
+  
+   margin-left: -10px;
+   margin-top: -10px;
+   width: 480px;
+   
+   
+ }
+ .title{
+  margin-left: 50px;
+  margin-top: 10px;
+  font-size: 30px;
+ }
+ .topEllipse{
+   margin-left: 40px;
+   
+ }
+.Login{
+margin-left: 212px;
+}
+.createAcc{
+  margin-left: 281px;
+}
+.box-1{
+  margin-left: 10px;
+  width: 450px;
+}
+.box-2{
+  margin-left: 10px;
+  width: 450px;
+}
+#filter-box{
+  margin-top: 65px;
+  height: 28px;
+  margin-left: 96px;
+
+  
 }
 #filt{
   display: none;
-}
-.topBar{
-    width: 410px;
-
-}
-.topEllipse{
-  margin-left: 33px;
-}
-.createAcc {
-    position: absolute;
-    margin-left: 191px;
-    margin-top: 25px;
-    width: 121px;
-    height: 20px;
-    border-radius: 3px;
-    border: solid 1px #fff;
-}
-.Login {
-  position: absolute;
-    width: 43px;
-    height: 23px;
-    margin-left: 235px;
-    margin-top: -1px;
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    color: #fff;
-}
-.creAcc {
-  display: block;
-  color: white;
-  margin-top: 3px;
-  margin-left: -2px;
-} 
-.title {
-  position: absolute;
-  width: 512px;
-  height: 51px;
-  margin-left: 32px;
-  margin-top: 18px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 19px;
-  font-weight: bold;
-  color: #192f60;
-}
-#filter-box {
-  position: absolute;
-  width: 260px;
-  height: 39px;
-  margin-left: 17px;
-  margin-top: 56px;
-  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
-  background-color: #fff;
+  
 }
 .Filters{
-  margin-top: 6px;
+    margin-top: 1px;
+};
+.butto{
+  position: absolute;
+  margin-top: 730px;
+  
 }
+.horizontal_rule{
+  width: 450px;
+}
+#but1 {
 
-
+  margin: 760px 0 0 75px;
+}
+.butto {
+  position: absolute;
+  margin-top: 760px;
+  margin-left: 120px;
+  display: flex;
+}
+#but7{
+  margin: 760px 0 0 335px;
+}
 }
   @media only screen and (min-width:481px) and (max-width:768px){
-    #filter-box{
-       height: 650px !important;
-    }
-    #filt{
-      display: block !important;
-    }
-    .topEllipse {
-      position: absolute;
-      margin-top: 5px;
-      width: 35px;
-      height: 35px;
-      margin-left: 20px;
-      border: #fff solid;
-      border-radius: 100px;
-      background-color: #fff;
-  }
-  .container {
-    width: 324px;
-    height: 973px;
-    margin-left: 5px;
-    background-color: #fbfbfb;
-    border: 2px solid #000000d3;
-}
-.topBar {
-  width: 324px;
-  height: 50px;
-  background-color: #ce0505;
-}
-.title {
-  position: absolute;
-  width: 512px;
-  height: 51px;
-  margin-left: 34px;
-  margin-top: 23px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  color: #192f60;
-}
+    .tvert{
+      visibility: hidden;
+        }
 
   }
   @media only screen and (min-width:769px) and (max-width:1024px){
-    .title{
-      color:green;
+    .tvert{
+      visibility: hidden;
     }
    
   }
   @media only screen and (min-width:1025px) and (max-width:1200px){
-    .title{
-      color:yellow;
+    .tvert{
+      visibility: hidden;
     }
    
   }
   @media only screen and (min-width:1201px){
-    .title{
-      color:palevioletred;
+    .tvert{
+      visibility: hidden;
     }
    
-  } */
+  } 
 
+  /* 320px — 480px: Mobile devices
+  481px — 768px: iPads, Tablets
+  769px — 1024px: Small screens, laptops
+  1025px — 1200px: Desktops, large screens
+  1201px and more —  Extra large screens, TV */

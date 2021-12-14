@@ -8,13 +8,13 @@ var but7=document.getElementById('but7');
 var filt=document.getElementById('filt');
 var filterb=document.getElementById('filter-box');
 function tvert(){
-  if(filt.style.display=="none")
-   { filt.style.display="block";
-    filterb.style.height="650px";
+  if(filt.style.display=="block")
+   { filt.style.display="none";
+    filterb.style.height="28px";
   }
    else 
-   {filt.style.display="none";   
-   filterb.style.height="39px";}
+   {filt.style.display="block";   
+   filterb.style.height="650px";}
 }
 function fun1(){
   but1.style.backgroundColor="#8c96ab"; 
