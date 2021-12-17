@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1">
+    <!-- <link rel="stylesheet" href="Product_Search_page.css"> -->
+    <title>Edureka Assigment 1</title>
+</head>
+<style>
+  .container{
+  width: 1390px;
+  height: 973px;
+  margin-left: -10px;
+  margin-top: -10px;
+  background-color: #fbfbfb;
+
+}
+.topBar{
+    
+    width: 1390px;
+   height: 50px;
+   
+  background-color: #ce0505;
+}
+.topEllipse{
+    position: absolute;
+    margin-top: 5px;
+    width: 35px;
+    height: 35px;      
+    margin-left: 90px;
+    border: #fff solid ;
+    border-radius: 100px;
+    background-color: #fff;
+   
+}
+.e{
+  display: block;
+  margin-top: -5px;
+  width: 32px;
+  height: 47px;
+  font-family: Poppins;
+  font-size: 33px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  color: #eb2929;
+ 
+}
+.Login{
+    position: absolute;
+    width: 43px;
+    height: 23px;
+    margin-left: 1030px;
+    margin-top: 15px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+ 
+  color: #fff;
+ 
+}
+.createAcc{
+    position: absolute;
+    margin-left: 1144px;
+    margin-top: 10px;
+    width: 180px;
+    height: 30px;
+    
+  border-radius: 3px;
+  border: solid 1px #fff;
+}
+.creAcc{
+    display: block;
+    color: white;
+    margin-top:5px;
+    
+}
+
+.title{ 
+  position: absolute;
+  width: 512px;
+  height: 51px;
+  margin-left: 90px;
+  margin-top: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  
+  color: #192f60;
+}
+
+#filter-box{
+  position: absolute;
+  width: 260px;
+  height: 650px;
+  margin-left: 90px;
+  margin-top: 110px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+
+}
+.box-1{
+    position: absolute;
+  width: 794px;
+  height: 270px;
+  margin-left: 400px;
+  margin-top: 110px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+}
+.box-2{
+    position: absolute;
+  width: 794px;
+  height: 270px;
+  margin-left: 400px;
+  margin-top: 430px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+}
+.Filters{
+   display: block;
+  width: 55px;
+  height: 25px;
+  margin-left: 26px;
+  margin-top: 17px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  color: #192f60;
+}
+.Select-Location {
+    display: block;
+    margin-left: 26px;
+    margin-top: 10px;
+  width: 106px;
+  height: 20px;
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #192f60;
+}
+.select-loc1{
+    position: absolute;
+  margin-top: 11px;
+  margin-left: 27px; 
+  width: 200px;
+  height: 30px;
+  border-radius: 3px;
+  border: solid 1px #8c96ab;
+
+
+}
+.select-loc2{
+    
+ display: block;
+  margin-top: 5px;
+   font-family: Poppins;
+  font-size: 14px;
+  color: #8c96ab;
+
+}
+.Cuisine{
+
+    display: block;
+    margin-left: 26px;
+    margin-top: 70px;
+  width: 106px;
+  height: 20px;
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #192f60;
+}
+.cuis{
+    display: block;
+  margin-top: 8px;
+  margin-left: 57px;
+   font-family: Poppins;
+  font-size: 14px;
+  color: #8c96ab;
+}
+.cuis1{
+    margin-top: 10px;
+}
+.price{
+    display: block;
+    margin-left: 26px;
+    margin-top: 20px;
+  width: 106px;
+  height: 20px;
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #192f60;
+}
+.img{
+ 
+  margin: 25px 0 0 25px;
+  width: 90px;
+  height: 90px;
+  border-radius: 20px;
+  object-fit: cover;
+  
+}
+.The-Big-Chill-Cakery {
+ position: absolute;
+  width: 400px;
+  height: 43px;
+ margin-left: 30px;
+ margin-top: 30px;
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 600;
+ 
+  color: #192f60;
+}
+.FORT {
+position: absolute;
+ margin-left: 33px;
+margin-top: 70px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+ 
+  color: #192f60;
+}
+.address{
+  position: absolute;
+  margin-top: 95px;
+  margin-left: 33px;
+   font-family: Poppins;
+  font-size: 14px;
+  color: #8c96ab;
+}
+.horizontal_rule{
+
+  width: 726.4px;
+  height: 0;
+  margin: 31px 0 0;
+  border: solid 1px #dedfe5;
+}
+.CUISINES-COST-FOR-TWO {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 33px;
+   font-family: Poppins;
+  font-size: 14px;
+  color: #8c96ab;
+}
+.cost_for{
+  position: absolute;
+  width: max-content;
+  margin-top: 10px;
+}
+.Bakery-700{
+  position: absolute;
+ margin-left: 110px;
+margin-top:-1px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+ 
+  color: #192f60;
+}
+.b700{
+  position: absolute;
+  width: max-content;
+  margin-top: 10px;
+}
+.butto{
+  position: absolute;
+  display: flex;
+  margin-top: 780px;
+  margin-left: 617px
+}
+#but2,#but3,#but4,#but5,#but6{
+  
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: solid 1px #8c96ab;
+  background-color: #fff;
+  margin-left: 5px;
+  color: #8c96ab;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: bold;
+
+}
+#but1{
+  position: absolute;
+  display: block;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: solid 1px #8c96ab;
+  background-color: #fff;
+  margin-left: 5px;
+  color: #8b92a3;
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 780px 0 0 560px;
+ 
+}
+#but7{
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: solid 1px #8c96ab;
+  background-color: #fff;
+  margin-left: 5px;
+  color: #8c96ab;
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 780px 0 0 850px;
+}
+.boxshadow{
+
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.16);
+}
+.tvert{
+  position: absolute;
+  margin-top: -25px;
+  margin-left: 230px;
+  color: #192f60;
+  font-size: x-large;
+  font-weight: bolder;
+
+}
+body{
+  overflow-x: hidden;
+}
+@media only screen and (min-width:0px) and (max-width:480px){
+ .topBar{
+       background-color: #ce0505;
+       width: 480px;
+ }
+ .container{
+  
+   margin-left: -10px;
+   margin-top: -10px;
+   width: 480px;
+   
+   
+ }
+ .title{
+  margin-left: 50px;
+  margin-top: 10px;
+  font-size: 30px;
+ }
+ .topEllipse{
+   margin-left: 40px;
+   
+ }
+.Login{
+margin-left: 212px;
+}
+.createAcc{
+  margin-left: 281px;
+}
+.box-1{
+  margin-left: 10px;
+  width: 450px;
+}
+.box-2{
+  margin-left: 10px;
+  width: 450px;
+}
+#filter-box{
+  margin-top: 65px;
+  height: 28px;
+  margin-left: 96px;
+
+  
+}
+#filt{
+  display: none;
+  
+}
+.Filters{
+    margin-top: 1px;
+};
+.butto{
+  position: absolute;
+  margin-top: 730px;
+  
+}
+.horizontal_rule{
+  width: 450px;
+}
+#but1 {
+
+  margin: 760px 0 0 75px;
+}
+.butto {
+  position: absolute;
+  margin-top: 760px;
+  margin-left: 120px;
+  display: flex;
+}
+#but7{
+  margin: 760px 0 0 335px;
+}
+body{
+  overflow-x: hidden;
+}
+}
+  @media only screen and (min-width:481px) and (max-width:768px){
+    .tvert{
+      visibility: hidden;
+        }
+        .container {
+          width: 1134px;
+          height: 963px;
+          margin-left: -10px;
+          margin-top: -9px;
+          background-color: #fbfbfb;
+          border: 2px solid #000000d3;
+      }
+      .Login {
+        position: absolute;
+        width: 43px;
+        height: 23px;
+        margin-left: 695px;
+        margin-top: 8px;
+        font-family: Poppins;
+        font-size: 21px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        color: #fff;
+    }
+    .createAcc {
+      position: absolute;
+      margin-left: 765px;
+      margin-top: 7px;
+      width: 192px;
+      height: 30px;
+      border-radius: 3px;
+      border: solid 1px #fff;
+  }
+  .creAcc {
+    display: block;
+    color: white;
+    margin-top: 1px;
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 600;
+} 
+.box-1,.box-2{
+  width: 540px;
+}
+.topBar{
+  width: 1136px;
+}
+#but1{
+  margin: 756px 0 0 474px;
+}
+.butto{
+
+  margin-top: 757px;
+  margin-left: 530px;
+}
+#but7{
+  margin: 758px 0 0 762px;
+}
+body{
+  overflow: hidden;
+}
+
+  }
+  @media only screen and (min-width:769px) and (max-width:1024px){
+    .tvert{
+      visibility: hidden;
+    }
+    .container {
+      width: 1134px;
+      height: 963px;
+      margin-left: -10px;
+      margin-top: -9px;
+      background-color: #fbfbfb;
+      border: 2px solid #000000d3;
+  }
+  .Login {
+    position: absolute;
+    width: 43px;
+    height: 23px;
+    margin-left: 695px;
+    margin-top: 8px;
+    font-family: Poppins;
+    font-size: 21px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    color: #fff;
+}
+.createAcc {
+  position: absolute;
+  margin-left: 765px;
+  margin-top: 7px;
+  width: 192px;
+  height: 30px;
+  border-radius: 3px;
+  border: solid 1px #fff;
+}
+.creAcc {
+display: block;
+color: white;
+margin-top: 1px;
+font-size: 18px;
+font-family: Poppins;
+font-weight: 600;
+} 
+.box-1,.box-2{
+width: 540px;
+}
+.topBar{
+width: 1136px;
+}
+#but1{
+margin: 756px 0 0 474px;
+}
+.butto{
+
+margin-top: 757px;
+margin-left: 530px;
+}
+#but7{
+margin: 758px 0 0 762px;
+}
+body{
+overflow: hidden;
+}
+
+   
+  }
+  @media only screen and (min-width:1025px) and (max-width:1200px){
+    .tvert{
+      visibility: hidden;
+    }
+   
+  }
+  @media only screen and (min-width:1201px){
+    .tvert{
+      visibility: hidden;
+    }
+   
+  } 
+
+  /* 320px — 480px: Mobile devices
+  481px — 768px: iPads, Tablets
+  769px — 1024px: Small screens, laptops
+  1025px — 1200px: Desktops, large screens
+  1201px and more —  Extra large screens, TV */
+</style>
+<body>
+    <div class="container">
+        <div class="topBar">
+            <div class="topEllipse">
+              <center>
+                  <span class="e">
+                e!
+                  </span>
+               </center> 
+             </div>
+            <span class="Login">
+                Login
+            </span>
+            <div class="createAcc">
+               <center>
+                   <span class="creAcc">
+                    Create an account
+                   </span>
+               </center> 
+            </div>
+        </div>
+        <div class="lowerContainer">
+              <span class="title">
+                Breakfast Places in Mumbai
+              </span>
+              <div id="filter-box" class="boxshadow">
+                  <span class="Filters">
+                    Filters
+                  </span>
+                  <span class="tvert" onclick="tvert()">≡</span>
+                   <div id="filt"> <span class="Select-Location">
+                    Select Location
+                  </span>
+                  <span class="select-loc1">
+                   <center><span class="select-loc2">Select Location &emsp;&emsp;▼</span></center>   
+                  </span>
+                  <span class="Cuisine">
+                   Cuisine
+                  </span>
+                  <div class="sel-cuisine">
+                      <span class="cuis cuis1">
+                          <input type="checkbox" value="northind" name="cuisine" id="c1"> North Indian</span>
+                      <span class="cuis"> 
+                          <input type="checkbox" value="southind" name="cuisine" id="c1">  South Indian</span>
+                         
+                      <span class="cuis"> 
+                          <input type="checkbox" value="chinese" name="cuisine" id="c1"> Chinese</span>
+                        
+                      <span class="cuis"> 
+                          <input type="checkbox" value="fast food" name="cuisine" id="c1"> Fast Food</span>
+                       
+                      <span class="cuis"> 
+                          <input type="checkbox" value="street food" name="cuisine" id="c1">  Street Food</span>
+                    </div>
+                    <span class="price" >Price Range</span>
+                    <div class="sel-cuisine">
+                        <span class="cuis cuis1">
+                            <input type="radio" value="less than 500" name="price" id="c1"> Less than ₹ 500</span>
+                        <span class="cuis"> 
+                            <input type="radio" value="500-1000" name="price" id="c1"> ₹ 500 to ₹ 1000</span>
+                           
+                        <span class="cuis"> 
+                            <input type="radio" value="1000-1500" name="price" id="c1"> ₹ 1000 to ₹ 1500</span>
+                          
+                        <span class="cuis"> 
+                            <input type="radio" value="1500-2000" name="price" id="c1"> ₹ 1500 to ₹ 2000</span>
+                         
+                        <span class="cuis"> 
+                            <input type="radio" value="2000+" name="price" id="c1"> ₹ 2000+</span>
+                      </div>
+                      <span class="Filters">
+                        Sort
+                      </span>
+                      <span class="cuis cuis1">
+                        <input type="radio" value="low2high" name="sort" id="l2h"> Price low to high</span>
+                    <span class="cuis"> 
+                        <input type="radio" value="high2low" name="sort" id="h2l">  Price high to low</span>
+                      </div> 
+              </div>  
+              <div class="box-1 boxshadow" >
+                    <span>
+                        <img class="img" src="https://cdn.zeplin.io/60596ed6123d8208426090b9/assets/C6535478-4524-40A9-9D8C-3D5A353DDFB6.png">
+                    </span>
+                    <span class="The-Big-Chill-Cakery">
+                      The Big Chill Cakery
+                    </span>  
+                    <span class="FORT">
+                      FORT
+                    </span>
+                    <span class="address">
+                      Shop 1, Plot D, Samruddhi Complex, Chincholi …
+                    </span>   
+                    <div class="horizontal_rule"></div>
+                    <span class="CUISINES-COST-FOR-TWO">
+                     <span class="cusn">CUISINES:</span>
+                     <span class="Bakery-700">
+                      Bakery<br>
+                     <span class="b700">₹700</span> 
+                    </span>
+                     <br>
+                    <span class="cost_for">COST FOR TWO:
+                    </span>
+              </div>
+              <div class="box-2 boxshadow">
+                   <span>
+                     <img class="img" src="https://cdn.zeplin.io/60596ed6123d8208426090b9/assets/C6535478-4524-40A9-9D8C-3D5A353DDFB6.png">
+                   </span>
+                   <span class="The-Big-Chill-Cakery">
+                       The Bake Shop
+                   </span>  
+                   <span class="FORT">
+                      FORT
+                   </span>
+                   <span class="address">
+                      Shop 1, Plot D, Samruddhi Complex, Chincholi …
+                   </span>   
+                   <div class="horizontal_rule"></div>
+                   <span class="CUISINES-COST-FOR-TWO">
+                   <span class="cusn">CUISINES:</span>
+                   <span class="Bakery-700">
+                        Bakery<br>
+                   <span class="b700">₹700</span> 
+                   </span>
+                   <br>
+                   <span class="cost_for">COST FOR TWO:
+                   </span>
+              </div><span><input type="button" id="but1" value="<" onclick="fun1()"></span>
+              <div class="butto">
+                   
+                   <span><input type="button" id="but2" value="1" onclick="fun2()"></span>
+                   <span><input type="button" id="but3" value="2" onclick="fun3()"></span>
+                   <span><input type="button" id="but4" value="3" onclick="fun4()"></span>
+                   <span><input type="button" id="but5" value="4" onclick="fun5()"></span>  
+                   <span><input type="button" id="but6" value="5" onclick="fun6()"></span>
+                  
+              </div> <span><input type="button" id="but7" value=">" onclick="fun7()"></span>
+            </div>
+    </div>
+  <script >
+
+var but1=document.getElementById('but1');
+var but1=document.getElementById('but1');
+var but1=document.getElementById('but1');
+var but1=document.getElementById('but1');
+var but1=document.getElementById('but1');
+var but1=document.getElementById('but1');
+var but7=document.getElementById('but7');
+var filt=document.getElementById('filt');
+var filterb=document.getElementById('filter-box');
+function tvert(){
+  if(filt.style.display=="block")
+   { filt.style.display="none";
+    filterb.style.height="28px";
+  }
+   else 
+   {filt.style.display="block";   
+   filterb.style.height="650px";
+   filt.style.position="relative";
+  }
+}
+function fun1(){
+  but1.style.backgroundColor="#8c96ab"; 
+  but1.style.color="white";
+  but2.style.backgroundColor="white"; 
+  but2.style.color="#8b92a3";
+  but3.style.backgroundColor="white"; 
+  but3.style.color="#8b92a3";
+  but4.style.backgroundColor="white"; 
+  but4.style.color="#8b92a3";
+  but5.style.backgroundColor="white"; 
+  but5.style.color="#8b92a3";
+  but6.style.backgroundColor="white"; 
+  but6.style.color="#8b92a3";
+  but7.style.backgroundColor="white"; 
+  but7.style.color="#8b92a3";
+  
+}
+function fun2(){
+  but2.style.backgroundColor="#8c96ab";  
+  but2.style.color="white";
+
+  but1.style.backgroundColor="white"; 
+  but1.style.color="#8b92a3";
+  but3.style.backgroundColor="white"; 
+  but3.style.color="#8b92a3";
+  but4.style.backgroundColor="white"; 
+  but4.style.color="#8b92a3";
+  but5.style.backgroundColor="white"; 
+  but5.style.color="#8b92a3";
+  but6.style.backgroundColor="white"; 
+  but6.style.color="#8b92a3";
+  but7.style.backgroundColor="white"; 
+  but7.style.color="#8b92a3";
+}
+function fun3(){
+  but3.style.backgroundColor="#8c96ab";  
+  but3.style.color="white";
+
+  but1.style.backgroundColor="white"; 
+  but1.style.color="#8b92a3";
+  but2.style.backgroundColor="white"; 
+  but2.style.color="#8b92a3";
+  
+  but4.style.backgroundColor="white"; 
+  but4.style.color="#8b92a3";
+  but5.style.backgroundColor="white"; 
+  but5.style.color="#8b92a3";
+  but6.style.backgroundColor="white"; 
+  but6.style.color="#8b92a3";
+  but7.style.backgroundColor="white"; 
+  but7.style.color="#8b92a3";
+}
+function fun4(){
+  but4.style.backgroundColor="#8c96ab";  
+  but4.style.color="white";
+
+  but1.style.backgroundColor="white"; 
+  but1.style.color="#8b92a3";
+  but2.style.backgroundColor="white"; 
+  but2.style.color="#8b92a3";
+  but3.style.backgroundColor="white"; 
+  but3.style.color="#8b92a3";
+  
+  but5.style.backgroundColor="white"; 
+  but5.style.color="#8b92a3";
+  but6.style.backgroundColor="white"; 
+  but6.style.color="#8b92a3";
+  but7.style.backgroundColor="white"; 
+  but7.style.color="#8b92a3";
+}
+function fun5(){
+  but5.style.backgroundColor="#8c96ab";  
+  but5.style.color="white";
+
+  but1.style.backgroundColor="white"; 
+  but1.style.color="8b92a3";
+  but2.style.backgroundColor="white"; 
+  but2.style.color="#8b92a3";
+  but3.style.backgroundColor="white"; 
+  but3.style.color="#8b92a3";
+  but4.style.backgroundColor="white"; 
+  but4.style.color="#8b92a3";
+  
+  but6.style.backgroundColor="white"; 
+  but6.style.color="#8b92a3";
+  but7.style.backgroundColor="white"; 
+  but7.style.color="#8b92a3";
+}
+function fun6(){
+  but6.style.backgroundColor="#8c96ab";  
+  but6.style.color="white";
+
+  but1.style.backgroundColor="#white"; 
+  but1.style.color="8b92a3";
+  but2.style.backgroundColor="white"; 
+  but2.style.color="#8b92a3";
+  but3.style.backgroundColor="white"; 
+  but3.style.color="#8b92a3";
+  but4.style.backgroundColor="white"; 
+  but4.style.color="#8b92a3";
+  but5.style.backgroundColor="white"; 
+  but5.style.color="#8b92a3";
+ 
+  but7.style.backgroundColor="white"; 
+  but7.style.color="#8b92a3";
+}
+function fun7(){
+  but7.style.backgroundColor="#8c96ab";  
+  but7.style.color="white";
+
+  but1.style.backgroundColor="#white"; 
+  but1.style.color="8b92a3";
+  but2.style.backgroundColor="white"; 
+  but2.style.color="#8b92a3";
+  but3.style.backgroundColor="white"; 
+  but3.style.color="#8b92a3";
+  but4.style.backgroundColor="white"; 
+  but4.style.color="#8b92a3";
+  but5.style.backgroundColor="white"; 
+  but5.style.color="#8b92a3";
+  but6.style.backgroundColor="white"; 
+  but6.style.color="#8b92a3";
+ 
+}
+
+    
+  </script>  
+</body>
+</html>
