@@ -1,42 +1,10 @@
-  /* *********************Sir Here I have Used KeyFrames For Dynamic Look************************* */
-
-body{
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #fcf80f, #23d5ab);
-	background-size: 400% 400%;
-	-webkit-animation: gradient 15s ease infinite;
-	        animation: gradient 15s ease infinite;
-}
-
-@-webkit-keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-/* *********************Sir Here I have Used KeyFrames For Dynamic Look************************* */
 .container{
-  width: 1300px;
+  width: 1390px;
   height: 973px;
-  margin-left: 15px;
+  margin-left: -10px;
+  margin-top: -10px;
   background-color: #fbfbfb;
-  border: 2px solid #000000d3;
+
 }
 .filt{
 
@@ -44,7 +12,7 @@ body{
 }
 .topBar{
     
-    width: 1300px;
+    width: 1390px;
    height: 50px;
    
   background-color: #ce0505;
@@ -77,8 +45,8 @@ body{
     position: absolute;
     width: 43px;
     height: 23px;
-  margin-left: 1030px;
-  margin-top: 15px;
+    margin-left: 1030px;
+    margin-top: 15px;
   font-family: Poppins;
   font-size: 16px;
   font-weight: 500;
@@ -90,7 +58,7 @@ body{
 }
 .createAcc{
     position: absolute;
-    margin-left: 1080px;
+    margin-left: 1144px;
     margin-top: 10px;
     width: 180px;
     height: 30px;
@@ -299,8 +267,8 @@ margin-top:-1px;
 .butto{
   position: absolute;
   display: flex;
-  margin-top: 730px;
-  margin-left: 610px
+  margin-top: 780px;
+  margin-left: 617px
 }
 #but2,#but3,#but4,#but5,#but6{
   
@@ -329,7 +297,7 @@ margin-top:-1px;
   font-family: Poppins;
   font-size: 25px;
   font-weight: bold;
-  margin: 730px 0 0 560px;
+  margin: 780px 0 0 560px;
  
 }
 #but7{
@@ -344,7 +312,7 @@ margin-top:-1px;
   font-family: Poppins;
   font-size: 25px;
   font-weight: bold;
-  margin: 730px 0 0 850px;
+  margin: 780px 0 0 850px;
 }
 .boxshadow{
 
@@ -358,6 +326,9 @@ margin-top:-1px;
   font-size: x-large;
   font-weight: bolder;
 
+}
+body{
+  overflow-x: hidden;
 }
 @media only screen and (min-width:0px) and (max-width:480px){
  .topBar{
@@ -430,17 +401,137 @@ margin-left: 212px;
 #but7{
   margin: 760px 0 0 335px;
 }
+body{
+  overflow-x: hidden;
+}
 }
   @media only screen and (min-width:481px) and (max-width:768px){
     .tvert{
       visibility: hidden;
         }
+        .container {
+          width: 1134px;
+          height: 963px;
+          margin-left: -10px;
+          margin-top: -9px;
+          background-color: #fbfbfb;
+          border: 2px solid #000000d3;
+      }
+      .Login {
+        position: absolute;
+        width: 43px;
+        height: 23px;
+        margin-left: 695px;
+        margin-top: 8px;
+        font-family: Poppins;
+        font-size: 21px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        color: #fff;
+    }
+    .createAcc {
+      position: absolute;
+      margin-left: 765px;
+      margin-top: 7px;
+      width: 192px;
+      height: 30px;
+      border-radius: 3px;
+      border: solid 1px #fff;
+  }
+  .creAcc {
+    display: block;
+    color: white;
+    margin-top: 1px;
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 600;
+} 
+.box-1,.box-2{
+  width: 540px;
+}
+.topBar{
+  width: 1136px;
+}
+#but1{
+  margin: 756px 0 0 474px;
+}
+.butto{
+
+  margin-top: 757px;
+  margin-left: 530px;
+}
+#but7{
+  margin: 758px 0 0 762px;
+}
+body{
+  overflow: hidden;
+}
 
   }
   @media only screen and (min-width:769px) and (max-width:1024px){
     .tvert{
       visibility: hidden;
     }
+    .container {
+      width: 1134px;
+      height: 963px;
+      margin-left: -10px;
+      margin-top: -9px;
+      background-color: #fbfbfb;
+      border: 2px solid #000000d3;
+  }
+  .Login {
+    position: absolute;
+    width: 43px;
+    height: 23px;
+    margin-left: 695px;
+    margin-top: 8px;
+    font-family: Poppins;
+    font-size: 21px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    color: #fff;
+}
+.createAcc {
+  position: absolute;
+  margin-left: 765px;
+  margin-top: 7px;
+  width: 192px;
+  height: 30px;
+  border-radius: 3px;
+  border: solid 1px #fff;
+}
+.creAcc {
+display: block;
+color: white;
+margin-top: 1px;
+font-size: 18px;
+font-family: Poppins;
+font-weight: 600;
+} 
+.box-1,.box-2{
+width: 540px;
+}
+.topBar{
+width: 1136px;
+}
+#but1{
+margin: 756px 0 0 474px;
+}
+.butto{
+
+margin-top: 757px;
+margin-left: 530px;
+}
+#but7{
+margin: 758px 0 0 762px;
+}
+body{
+overflow: hidden;
+}
+
    
   }
   @media only screen and (min-width:1025px) and (max-width:1200px){

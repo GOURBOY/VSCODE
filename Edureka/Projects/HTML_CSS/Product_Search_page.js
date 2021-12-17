@@ -14,7 +14,9 @@ function tvert(){
   }
    else 
    {filt.style.display="block";   
-   filterb.style.height="650px";}
+   filterb.style.height="650px";
+   filt.style.position="relative";
+  }
 }
 function fun1(){
   but1.style.backgroundColor="#8c96ab"; 
