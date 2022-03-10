@@ -1,14 +1,21 @@
 #include<iostream>
 using namespace std;
-int main(){
-try{
-	float f1 = new float("3.0");
-	int x = f1.intValue();
-	byte b = f1.byteValue();
-	double d = f1.doubleValue();
-cout<<x+b+d;
-	}catch (NumberFormatException e) /* Line 9 */{
-		cout<<"bad number"; /* Line 11 */
-		}
+void swap(int* a, int* b){
+	int t=*a;
+	*a=*b;
+	*b=t;
+}
+int partition(int arr[],int low,int high){
+      int pivot= arr[high];
+	  int i=low-1;
+      for(int j=i;j<=high-1;j++){
+		  if(j<=pivot){
+			  i++;
+			  swap(&arr[i],&arr[j]);
+		  }
+	  }
+       swap(&arr[i+1],&arr[high]);
+	   return i+1;
+
 
 }
