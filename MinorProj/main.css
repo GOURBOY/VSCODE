@@ -1,0 +1,35 @@
+body {
+    /* border: 2px solid lime;
+    width: 170px;
+    height: 300px;
+    margin-left: 350px;
+    margin-top: 20px; */
+    background: linear-gradient(-45deg, #ff9393, #fdff6f, hsl(155, 100%, 69%), #de96ff);
+    background-size: 900% 900%;
+    -webkit-animation: gradient 15s ease infinite;
+    animation: gradient 15s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
