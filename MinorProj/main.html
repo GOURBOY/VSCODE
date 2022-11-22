@@ -1,15 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Document</title>
-    <link rel="stylesheet" href="main.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IWT assignment</title>
+<style>
+*{
+margin: 0;
+padding: 0;
+}
+.container{
+margin: 20px auto;
+padding: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+border: 2px solid black;
+border-radius: 50px;
+max-width: 70%;
+background-color: rgba(236, 255, 185, 0.174);
+}
+.container form{
+margin: auto;
+}
+.container input{
+margin: 15px;
+padding: 3px 10px;
+outline: none;
+border: 2px solid black;
+border-radius: 8px;
+}
+.container h2{
+text-align: center;
+}
+.btn {
+margin: 5px 9px;
+background-color: transparent;
+color: black;
+padding: 4px 14px;
+border: 2px solid gray;
+border-radius: 10px;
+font-size: 20px;
+cursor: pointer;
+}
+</style>
 </head>
-
 <body>
+<div class="container">
+<form action="#">
+<h1><center>STUDENT REGISTRATION FORM</center></h1>
+<table align="center" cellpadding = "10">
+<tr>
+<td>First Name</td>
+<td><input type="text" name="FirstName" maxlength="60" placeholder="xyz"
+/>
+(Max 60 Characters Allowed)
+</td>
+</tr>
+<tr>
+<td>Middle Name</td>
+<td><input type="text" name="middleName" maxlength="60"
+placeholder="xyz"
+/>
+(Max 60 Characters Allowed)
+</td>
+</tr>
+<!------------------------ Last Name--------------------------------------->
+<tr>
+<td>Last Name</td>
+<td><input type="text" name="LastName" maxlength="60" placeholder="abc"/>
+(Max 60 Characters Allowed)
+</td>
+</tr>
+<!-------------------------- family details------------------------------------->
+<tr>
+<td>Father's Name</td>
 
-    <script>
-    </script>
+<td><input type="text" name="fatherName" maxlength="60"
+placeholder="xyz"
+/>
+(Max 60 Characters Allowed)
+</td>
+</tr>
+<tr>
+<td>Mother's Name</td>
+<td><input type="text" name="motherName" maxlength="60"
+
+placeholder="xyz"
+/>
+(Max 60 Characters Allowed)
+</td>
+</tr>
+<!-------------------------- Email ID------------------------------------->
+<tr>
+<td>Email ID</td>
+<td><input type="email" name="EmailID" maxlength="100"
+placeholder="xyz@gmail.com"/></td>
+</tr>
+<!-------------------------- Mobile Number------------------------------------->
+<tr>
+<td>Mobile Number</td>
+<td>
+<input type="text" name="MobileNumber" maxlength="10"
+placeholder="9414xxxxxx"/>
+(10 Digits Allowed)
+</td>
+</tr>
+<!---------------------- Gender ------------------------------------->
+<tr>
+<td>Gender</td>
+<td>
+<input type="radio" name="Gender" value="Male" />
+Male
+<input type="radio" name="Gender" value="Female" />
+Female
+<input type="radio" name="Gender" value="transgender" />
+Transgender
+<input type="radio" name="Gender" value="gender neutral" />
+Gender neutral<br>
+<input type="radio" name="Gender" value="non-binary" />
+<input type="radio" name="Gender" value="agender" />
+Agender
+<input type="radio" name="Gender" value="genderqueer" />
+Genderqueer
+<input type="radio" name="Gender" value="two-spirit" />
+Two-spirit
+</td>
+</tr>
+<!--------------------------Date Of Birth----------------------------------->
+<tr>
+<td>Date of Birth(DOB)</td>
+<td>
+<input type="date">
+</td>
+</tr>
+<!------------------------- Address ---------------------------------->
+<tr>
+<td>Address<br /><br /><br /></td>
+<td><textarea name="Address" rows="10" cols="50"></textarea></td>
+</tr>
+<!-------------------------- City ------------------------------------->
+<tr>
+<td>City</td>
+<td><input type="text" name="City" maxlength="50"
+placeholder="Indore"/>
+(Max 50 Characters Allowed)
+</td>
+</tr>
+<!----- -------------------- Pin Code-------------------------------------->
+<tr>
+<td>Pin Code</td>
+<td><input type="Number" name="PinCode" maxlength="6"
+placeholder="452003"/>
+(Max 6 Numbers Allowed)
+</td>
+</tr>
+<!---------------------------- State ----------------------------------->
+<tr>
+<td>State</td>
+<td><input type="text" name="State" maxlength="50"
+placeholder="MP"/>
+(Max 50 Characters Allowed)
+</td>
+</tr>
+<tr>
+<td>Country</td>
+<td><input type="text" name="Country" placeholder="India" /></td>
+</tr>
+<!------------------------- Hobbies -------------------------------------->
+<tr>
+<td>Hobbies <br /><br /><br /></td>
+<td>
+<input type="checkbox" name="HobbyDrawing" value="Drawing" />
+Drawing
+<input type="checkbox" name="HobbySinging" value="Singing" />
+Singing
+<input type="checkbox" name="HobbyDancing" value="Dancing" />
+Dancing
+<input type="checkbox" name="HobbyCooking" value="Cooking" />
+Sketching
+<br />
+<input type="checkbox" name="HobbyOther" value="Other">
+Others
+
+<input type="text" name="Other_Hobby" maxlength="50" placeholder="Ex-
+Teaching" />
+
+(Max 50 Characters Allowed)
+</td>
+</tr>
+<!-----------------------Qualification---------------------------------------->
+<tr>
+<td>Qualification <br /><br /><br /></td>
+<td>
+<br/>
+<input type="checkbox" name="HighSchool" value="High School" />
+High School(10th)<br>
+<input type="checkbox" name="HigherSchool" value="Higher School" />
+Higher Secondary(12th)<br/>
+<input type="checkbox" name="Graduation" value="Graduation" />
+Graduation(Bachelors)<br/>
+</td>
+</tr>
+<!---------------------------- Courses----------------------------------->
+<tr>
+<td>Courses<br />Applied For</td>
+<td>
+<input type="radio" name="CourseBCA" value="BE/BTech">
+BE/BTech(Bachelor of Technology)<br>
+<input type="radio" name="CourseBCom" value="B.Com">
+B.Com(Bachelor of Commerce)<br>
+
+Abhay Gour
+(0827CS201009)
+<input type="radio" name="CourseBSc" value="B.Sc">
+B.Sc(Bachelor of Science)<br>
+<input type="radio" name="CourseBA" value="Mtech">
+M.Tech(Master of Technology)<br>
+<input type="radio" name="CourseMCA" value="MSc">
+M.Sc(Master of Science)<br>
+<input type="radio" name="CourseMCom" value="M.Com">
+M.Com(Master of Commerce)<br>
+<input type="radio" name="CourseMSc" value="MS">
+MS(Master of Surgery)<br>
+</td>
+</tr>
+<!----------------------- Submit and Reset------------------------------->
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Submit" class="btn">
+<input type="reset" value="Reset" class="btn">
+</td>
+</tr>
+</table>
+</form>
+</div>
 </body>
-
 </html>

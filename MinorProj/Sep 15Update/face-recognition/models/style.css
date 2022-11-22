@@ -1,3 +1,19 @@
+
+.start{
+  position: absolute;
+  font-size: xx-large;
+  font-weight: bolder;
+   margin-top: -50px;
+   margin-left: 500px;
+   color: white;
+}
+.box{
+  margin-top: 100px;
+  margin-left: 400px;
+  height: 400px;
+  width: 600px;
+  border: #42a5f5 2px solid;
+}
 body {
   margin: 0;
   padding: 0;
@@ -10,12 +26,7 @@ body {
 canvas {
   position: absolute;
 }
-.container {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
+
 .result-container {
   display: flex;
   width: 100%;
